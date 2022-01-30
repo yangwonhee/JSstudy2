@@ -1,0 +1,139 @@
+@import "reset.css";
+
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* colors */
+  --main-color: #0dcbcb;
+  --dark-background-color: #9794f2;
+  --pink-color: #f2b4ae;
+  --blue-color: #3d46f2;
+  --black-color: #000000;
+  --lightgray-color: #f4f4f4;
+  --ppink-color: #f29494;
+
+  /* space */
+  --space-xxl: 72px;
+  --space-xl: 48px;
+  --space-l: 24px;
+  --space-m: 16px;
+  --space-s: 12px;
+  --space-xs: 8px;
+
+  /* font sizes */
+  --fontsize-h1: 150px;
+  --fontsize-h2: 100px;
+  --fontsize-h3: 60px;
+  --fontsize-l: 20px;
+  --fontsize-m: 18px;
+  --fontsize-s: 16px;
+  --fontsize-xs: 14px;
+}
+
+body {
+  background-color: #f6f9fc;
+  font-family: "DungGeunMo";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+.hidden {
+  display: none;
+  background-color: white;
+}
+
+#login-form .loginBox {
+  margin-top: 500px;
+  width: 400px;
+  height: 400px;
+  max-width: 500x;
+  /* display: flex; */
+  align-items: flex;
+}
+
+#login-form .loginBox input {
+  font-size: var(--fontsize-l);
+  font-weight: 600;
+  margin-top: var(--space-xs);
+  height: 36px;
+  border: none;
+  border-bottom: solid 3px #000000;
+  color: #000000;
+}
+
+#login-form .loginBox input::placeholder {
+  width: 300px;
+  color: var(--blue-color);
+  font-size: var(--fontsize-m);
+  font-weight: 400;
+  font-family: "DungGeunMo";
+}
+
+.greetingText {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.canvas {
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .controls__btns {
+  margin-bottom: 30px;
+}
+
+.controls__btns button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 0px;
+  width: 80px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.controls__btns button:active {
+  transform: scale(0.78);
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+
+.controls__colors .controls__color {
+  width: 50px;
+  height: 50px;
+  /* 원형으로 만들려면 width값의 반 만큼을 border-radius값으로 지정 */
+  cursor: pointer;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.controls .controls__range {
+  margin-bottom: 30px;
+}
